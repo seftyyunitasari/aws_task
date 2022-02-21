@@ -42,6 +42,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem "dotenv-rails"
+gem "unicorn"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -51,6 +54,14 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "capistrano", "3.16.0"
+  gem "capistrano-bundler"
+  gem "capistrano-rails"
+  gem "capistrano-rbenv"
+  gem "capistrano3-unicorn"
+  gem "ed25519"
+  gem "bcrypt_pbkdf"
+  
 end
 
 group :development do
